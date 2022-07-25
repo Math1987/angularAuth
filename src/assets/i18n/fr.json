@@ -1,0 +1,12 @@
+{
+    "header" : {
+        "appName" : "nos-lectures",
+        "home" : "accueil",
+        "login" : "se connecter"
+    },
+    "login" : {
+        "title" : "Se connecter"
+    },
+    "title" : "you-read",
+    "password" : "mot de passe"
+}

@@ -1,0 +1,9 @@
+{
+    "header" : {
+        "appName" : "you-read",
+        "home" : "home",
+        "login" : "login"
+    },
+    "title" : "you-read",
+    "password" : "password"
+}

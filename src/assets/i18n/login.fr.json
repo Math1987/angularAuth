@@ -1,0 +1,13 @@
+{
+    "title" : "BONJOUR",
+    "login" : {
+        "title" : "Se connecter"
+    },
+    "connect" : "se connecter",
+    "create" : "créer",
+    "new" : "créer acompte",
+    "password" : "mot de passe",
+    "confirmPassword" : "confirmer mot de passe"
+
+
+}

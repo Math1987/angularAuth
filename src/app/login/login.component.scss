@@ -1,0 +1,15 @@
+:host{
+    width: 100% ;
+    height: 100% ;
+    background-color: gray ;
+    display : flex ;
+    flex-flow: column nowrap ;
+    align-items: center ;
+    justify-content: center ;
+}
+.selected{
+    background-color: lightblue ;
+}
+.card{
+    padding : 1rem 3rem ;
+}

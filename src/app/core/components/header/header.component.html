@@ -1,10 +1,41 @@
 <mat-toolbar color="primary">
-    <span>You-read</span>
+    <span>{{ 'header.appName' | translate }}</span>
     <ul>
-      <li><a routerLink="/home">home</a></li>
+      <li><a routerLink="/home">{{ 'header.home' | translate }}</a></li>
     </ul>
     <span class="example-spacer"></span>
     <ul>
-      <li><a routerLink="/login">login</a></li>
+
+
+
+      <li>
+
+        <button mat-raised-button [matMenuTriggerFor]="menu">{{translate.currentLang}}</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="setLanguage('fr')">FR</button>
+          <button mat-menu-item (click)="setLanguage('en')">EN</button>
+        </mat-menu>
+
+
+        <ul *ngIf="authS.user$ | async as user ; else noLogged" >
+          <button mat-raised-button [matMenuTriggerFor]="menuCo">{{user.email}}</button>
+          <mat-menu #menuCo="matMenu">
+            <button mat-menu-item>my account</button>
+            <button mat-menu-item (click)="deconnection()">Deconnection</button>
+          </mat-menu>
+  
+  
+        </ul>
+
+        <ng-template #noLogged>
+          <ul> 
+            <a routerLink="/login">{{ 'header.login' | translate }}</a>
+          </ul>
+        </ng-template>
+
+      </li>
+
+
+
     </ul>
   </mat-toolbar>

@@ -1,1 +1,9 @@
-<p>login works!</p>
+<mat-card class="card">
+
+    <mat-card-actions>
+          <button mat-raised-button routerLink="/login/connect" [routerLinkActive]="'selected'" [routerLinkActiveOptions]="{ exact : true}">{{ 'connect' | translate }}</button>
+          <button mat-raised-button routerLink="/login/new" [routerLinkActive]="'selected'" [routerLinkActiveOptions]="{ exact : true}">{{ 'new' | translate }}</button>
+    </mat-card-actions>
+
+    <router-outlet></router-outlet>
+</mat-card>

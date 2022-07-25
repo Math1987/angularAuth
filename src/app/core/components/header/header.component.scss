@@ -1,6 +1,10 @@
 .example-spacer {
     flex: 1 1 auto;
   }
+li{
+  display : flex ;
+  flex-flow: row nowrap; 
+}
 ul{
     list-style: none ;
 }

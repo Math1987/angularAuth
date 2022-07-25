@@ -1,0 +1,16 @@
+
+<mat-card-content [formGroup]="form" class="card-content">
+    <mat-card-title>{{ 'login.title' | translate}}</mat-card-title>
+
+    <mat-form-field>
+        <mat-card-subtitle>email</mat-card-subtitle>
+        <input matInput formControlName="email" type="text">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-card-subtitle>{{ 'password' | translate }}</mat-card-subtitle>
+        <input matInput formControlName="password" type="password">
+    </mat-form-field>
+    <button (click)="loginAccount()" mat-raised-button color="primary" [disabled]="!form.valid">{{ 'connect' | translate}}</button>
+
+
+</mat-card-content>
