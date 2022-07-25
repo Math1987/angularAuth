@@ -1,4 +1,9 @@
-# Angular
+# Angular project with Auth and Language system 
+
+Language system is based on [ngx translate](https://github.com/ngx-translate), 
+Auth system use a token in localstorage.
+Login route allow to create a new accompte or login.
+Language automatically update datas in backend if a user is connected.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
 
